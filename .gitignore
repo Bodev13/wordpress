@@ -2,4 +2,20 @@
 volumes/
 *.log
 *.tmp
+
+# Environments
 .env
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# operating system-related files
+# file properties cache/storage on macOS
+*.DS_Store
+
+wp-config.php
