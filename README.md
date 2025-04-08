@@ -49,16 +49,16 @@ This will get the app running in a Docker container on your local machine and on
 ### Set the environment variables:
 
 ```bash
-WORDPRESS_PORT=8080
-
+# WordPress DB settings
 WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=wpuser
 WORDPRESS_DB_PASSWORD=wppassword!
 
-MYSQL_DATABASE=wordpress
-MYSQL_USER=wpuser
-MYSQL_PASSWORD=wppassword!
-MYSQL_ROOT_PASSWORD=rootpass
+# MariaDB settings
+MARIADB_ROOT_PASSWORD=rootpass
+MARIADB_DATABASE=wordpress
+MARIADB_USER=wpuser
+MARIADB_PASSWORD=wppassword!
 ```
 ### Build and start the Wordpress server container:
 
