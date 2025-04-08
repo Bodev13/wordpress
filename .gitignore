@@ -1,21 +1,26 @@
-# Ignore docker volumes
+# Docker volumes 
 volumes/
 *.log
 *.tmp
 
-# Environments
+# Docker-related
 .env
-.env/
-.venv/
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-pythonenv*
+docker-compose.override.yml
 
-# operating system-related files
-# file properties cache/storage on macOS
-*.DS_Store
+# WordPress cache/uploads
+wordpress_data/
+db_data/
 
-wp-config.php
+# System files
+.DS_Store
+Thumbs.db
+
+# Node/Yarn
+node_modules/
+yarn.lock
+package-lock.json
+
+# IDE configs
+.vscode/
+.idea/
+*.swp

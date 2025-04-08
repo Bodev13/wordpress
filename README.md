@@ -16,10 +16,11 @@ This repository provides a simple and reproducible Docker-based setup to run a W
 ## Quickstart
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Bodev13/wordpress.git
 cd wordpress
-````
+```
 2. Create and set up .env file
 3. Build and start the Wordpress server container:
 
@@ -30,26 +31,25 @@ docker-compose up --build
 
 ```bash
 http://localhost:8080
-````
+```
 5. On your cloud vm:
 ```bash
 http://your_cloud_vm:8080
-````
-6. Stop the containers:
+```
+6. Stop and delete containers:
 ```bash
-docker-compose down -v
+docker-compose down
 ```
 
 
 ## Usage
 
-his will get the app running in a Docker container on your local machine and on the V-Server.
+This will get the app running in a Docker container on your local machine and on the V-Server.
 
 ### Set the environment variables:
 
 ```bash
 WORDPRESS_PORT=8080
-ALLOWED_HOSTS=your_cloud_vm_ip,localhost,127.0.0.1,0.0.0.0
 
 WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=wpuser
@@ -69,4 +69,4 @@ docker-compose up --build
 ### Access the Wordpress website:
 ```bash
 https://your_cloud_vm:8080
-````
+```
