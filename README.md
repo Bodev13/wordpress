@@ -49,6 +49,11 @@ This will get the app running in a Docker container on your local machine and on
 ### Set the environment variables:
 
 ```bash
+#WordPress user
+WORDPRESS_USERNAME=admin
+WORDPRESS_PASSWORD=password
+WORDPRESS_EMAIL=example@example.com
+
 # WordPress DB settings
 WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=wpuser
