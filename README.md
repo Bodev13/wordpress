@@ -48,12 +48,12 @@ This will get the app running in a Docker container on your local machine and on
 
 ### Set the environment variables
 
-To launch and login to your wordpress server you can use the following variables for your .env file
+To launch and login to your wordpress server you can use the following variables as an example for your .env file
 
 ```bash
 #WordPress user
-WORDPRESS_USERNAME=admin
-WORDPRESS_PASSWORD=password
+WORDPRESS_USERNAME=your_username
+WORDPRESS_PASSWORD=your_secure_password
 WORDPRESS_EMAIL=example@example.com
 
 # WordPress DB settings
