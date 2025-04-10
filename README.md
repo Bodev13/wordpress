@@ -1,42 +1,81 @@
 # WordPress Docker Project
 
-## Table of Contents
-
-- [Description](#description)
-- [Quickstart](#quickstart)
-- [Usage](#usage)
-- [Environment Variables](#environment-variables)
-- [Volumes](#volumes)
-
-## Description
 
 This repository provides a simple and reproducible Docker-based setup to run a WordPress website with a MariaDB database.
 
-## Quickstart
-
 ### Prerequisites
 
-- Docker
-- Docker Compose
+- Docker & Docker Compose installed
 
-### Start the services
+## Table of Contents
+
+- [Quickstart](#quickstart)
+- [Usage](#usage)
+
+
+## Quickstart
+
+1. Clone the repository
 
 ```bash
-docker-compose up -d
+git clone https://github.com/Bodev13/wordpress.git
+cd wordpress
 ```
+2. Create and set up .env file
+3. Build and start the Wordpress server container
 
-### Visit your WordPress locally:
+```bash
+docker-compose up --build
+```
+4. Visit the wordpress locally
+
 ```bash
 http://localhost:8080
 ```
-### on your cloud VM:
+5. On your cloud vm
 ```bash
 http://your_cloud_vm:8080
 ```
+6. Stop and delete containers
+```bash
+docker-compose down
+```
+
 
 ## Usage
 
-1. Create and setup your .env file
-1. 
-1. 
-1. 
+This will get the app running in a Docker container on your local machine and on the V-Server.
+
+### Set the environment variables
+
+To launch and login to your wordpress server you can use the following variables as an example for your .env file
+
+```bash
+#WordPress user
+WORDPRESS_USERNAME=your_username
+WORDPRESS_PASSWORD=your_secure_password
+WORDPRESS_EMAIL=example@example.com
+
+# WordPress DB settings
+WORDPRESS_DB_NAME=wordpress
+WORDPRESS_DB_USER=wpuser
+WORDPRESS_DB_PASSWORD=wppassword!
+
+# MariaDB settings
+MARIADB_ROOT_PASSWORD=rootpass
+MARIADB_DATABASE=wordpress
+MARIADB_USER=wpuser
+MARIADB_PASSWORD=wppassword!
+```
+### Building and starting Wordpress setup
+
+In order to build the setup and launch it, use the following command
+
+```bash
+docker-compose up --build
+```
+
+### Access the Wordpress website
+```bash
+https://your_cloud_vm:8080
+```

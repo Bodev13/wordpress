@@ -1,5 +1,26 @@
-# Ignore docker volumes
+# Docker volumes 
 volumes/
 *.log
 *.tmp
+
+# Docker-related
 .env
+docker-compose.override.yml
+
+# WordPress cache/uploads
+wordpress_data/
+db_data/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node/Yarn
+node_modules/
+yarn.lock
+package-lock.json
+
+# IDE configs
+.vscode/
+.idea/
+*.swp
